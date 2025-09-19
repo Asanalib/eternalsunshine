@@ -1,0 +1,3568 @@
+Last login: Thu Sep 18 11:37:39 on ttys002
+asanalibolat@Asanalis-MacBook-Air ~ % mkdir work
+mkdir: work: File exists
+asanalibolat@Asanalis-MacBook-Air ~ % cd work
+asanalibolat@Asanalis-MacBook-Air work % touch hello.html
+asanalibolat@Asanalis-MacBook-Air work % git init
+Initialized empty Git repository in /Users/asanalibolat/work/.git/
+asanalibolat@Asanalis-MacBook-Air work % git add hllo.html
+fatal: pathspec 'hllo.html' did not match any files
+asanalibolat@Asanalis-MacBook-Air work % git add hello.html
+asanalibolat@Asanalis-MacBook-Air work % git commit -m "lol"
+[main (root-commit) 251059f] lol
+ Committer: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello.html
+asanalibolat@Asanalis-MacBook-Air work % git status
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	work/
+
+nothing added to commit but untracked files present (use "git add" to track)
+asanalibolat@Asanalis-MacBook-Air work % git status 
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	work/
+
+nothing added to commit but untracked files present (use "git add" to track)
+asanalibolat@Asanalis-MacBook-Air work % git add hello.html
+asanalibolat@Asanalis-MacBook-Air work % git status
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	work/
+
+nothing added to commit but untracked files present (use "git add" to track)
+asanalibolat@Asanalis-MacBook-Air work % git add a.html
+fatal: pathspec 'a.html' did not match any files
+asanalibolat@Asanalis-MacBook-Air work % cd work
+asanalibolat@Asanalis-MacBook-Air work % touch a.html
+asanalibolat@Asanalis-MacBook-Air work % cd work
+asanalibolat@Asanalis-MacBook-Air work % touch b.html
+asanalibolat@Asanalis-MacBook-Air work % cd work
+asanalibolat@Asanalis-MacBook-Air work % touch c.html
+asanalibolat@Asanalis-MacBook-Air work % git add a.html
+fatal: pathspec 'a.html' did not match any files
+asanalibolat@Asanalis-MacBook-Air work % git add b,html
+fatal: pathspec 'b,html' did not match any files
+asanalibolat@Asanalis-MacBook-Air work % cd work 
+asanalibolat@Asanalis-MacBook-Air work % git add a.html
+fatal: pathspec 'a.html' did not match any files
+asanalibolat@Asanalis-MacBook-Air work % touch a.html
+asanalibolat@Asanalis-MacBook-Air work % touch b.html 
+asanalibolat@Asanalis-MacBook-Air work % git commit -m "changes for a and b"
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	a.html
+	b.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+asanalibolat@Asanalis-MacBook-Air work % git add c.html
+fatal: pathspec 'c.html' did not match any files
+asanalibolat@Asanalis-MacBook-Air work % git status
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	a.html
+	b.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+asanalibolat@Asanalis-MacBook-Air work % cd../..
+zsh: no such file or directory: cd../..
+asanalibolat@Asanalis-MacBook-Air work % ../..
+zsh: permission denied: ../..
+asanalibolat@Asanalis-MacBook-Air work % cd /Users/asanalibolat/Desktop/githowto/repositories/work
+asanalibolat@Asanalis-MacBook-Air work % git add a.html
+asanalibolat@Asanalis-MacBook-Air work % git add b.html
+asanalibolat@Asanalis-MacBook-Air work % git commit -m "commots to a and b"
+Auto packing the repository in background for optimum performance.
+See "git help gc" for manual housekeeping.
+[main db7f886] commots to a and b
+ Committer: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 4 files changed, 36 insertions(+)
+ create mode 100644 Desktop/githowto/repositories/work/a.html
+ create mode 100644 Desktop/githowto/repositories/work/b.html
+ create mode 100644 Desktop/githowto/repositories/work/c.html
+ create mode 100644 Desktop/githowto/repositories/work/hello.html
+asanalibolat@Asanalis-MacBook-Air work % git config --global Asanalib "Asanali"
+error: key does not contain a section: Asanalib
+asanalibolat@Asanalis-MacBook-Air work % git config --global user.name "Asanalib"
+asanalibolat@Asanalis-MacBook-Air work %  git config --global user.email universekrovat@gmail.com
+asanalibolat@Asanalis-MacBook-Air work % git commit
+warning: could not open directory '.Trash/': Operation not permitted
+warning: could not open directory 'Documents/': Operation not permitted
+warning: could not open directory '.Trash/': Operation not permitted
+warning: could not open directory 'Documents/': Operation not permitted
+On branch main
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	deleted:    ../../../../1.py
+	deleted:    ../../../../README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../../../../.CFUserTextEncoding
+	../../../../.DS_Store
+	../../../../.cups/
+	../../../../.dbclient/
+	../../../../.gitconfig
+	../../../../.gitconfig.swp
+	../../../../.idlerc/
+	../../../../.local/
+	../../../../.swiftpm/
+	../../../../.viminfo
+	../../../../.vscode/
+	../../../../.zprofile
+	../../../../.zprofile.pysave
+	../../../../.zsh_history
+	../../../../.zsh_sessions/
+	../../../../Applications/
+	../../../../DataGripProjects/
+	../../../.DS_Store
+	../../../.localized
+	../../../472633114_18483765187056474_6860639151999544586_n.jpg
+	../../../Amethyst/
+	../../../Garnet/
+	../../../Git_Cheat_Sheet.pdf
+	../../../Lecture 2. Descriptive Statistics.pdf
+	../../../Lecture 3. Descriptive Statistics (cont.).pdf
+	../../../Seminar 2. Descriptive Statistics.pdf
+	../../../Seminar 3. Descriptive Statistics (cont.).pdf
+	../../../VS/
+	../../../and Pearl/
+	../../../and Steven!/
+	../../.DS_Store
+	../../files/
+	../.DS_Store
+	.DS_Store
+	../../../../Downloads/
+	../../../../Library/
+	../../../../Movies/
+	../../../../Music/
+	../../../../Pictures/
+	../../../../Public/
+	../../../../lol/
+	../../../../work/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+asanalibolat@Asanalis-MacBook-Air work % touch hello.html
+asanalibolat@Asanalis-MacBook-Air work % git commit
+warning: could not open directory '.Trash/': Operation not permitted
+warning: could not open directory 'Documents/': Operation not permitted
+warning: could not open directory '.Trash/': Operation not permitted
+warning: could not open directory 'Documents/': Operation not permitted
+On branch main
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	deleted:    ../../../../1.py
+	deleted:    ../../../../README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../../../../.CFUserTextEncoding
+	../../../../.DS_Store
+	../../../../.cups/
+	../../../../.dbclient/
+	../../../../.gitconfig
+	../../../../.gitconfig.swp
+	../../../../.idlerc/
+	../../../../.local/
+	../../../../.swiftpm/
+	../../../../.viminfo
+	../../../../.vscode/
+	../../../../.zprofile
+	../../../../.zprofile.pysave
+	../../../../.zsh_history
+	../../../../.zsh_sessions/
+	../../../../Applications/
+	../../../../DataGripProjects/
+	../../../.DS_Store
+	../../../.localized
+	../../../472633114_18483765187056474_6860639151999544586_n.jpg
+	../../../Amethyst/
+	../../../Garnet/
+	../../../Git_Cheat_Sheet.pdf
+	../../../Lecture 2. Descriptive Statistics.pdf
+	../../../Lecture 3. Descriptive Statistics (cont.).pdf
+	../../../Seminar 2. Descriptive Statistics.pdf
+	../../../Seminar 3. Descriptive Statistics (cont.).pdf
+	../../../VS/
+	../../../and Pearl/
+	../../../and Steven!/
+	../../.DS_Store
+	../../files/
+	../.DS_Store
+	.DS_Store
+	../../../../Downloads/
+	../../../../Library/
+	../../../../Movies/
+	../../../../Music/
+	../../../../Pictures/
+	../../../../Public/
+	../../../../lol/
+	../../../../work/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+asanalibolat@Asanalis-MacBook-Air work % GIT_EDITOR
+zsh: command not found: GIT_EDITOR
+asanalibolat@Asanalis-MacBook-Air work % git commit -a
+warning: could not open directory '.Trash/': Operation not permitted
+warning: could not open directory 'Documents/': Operation not permitted
+Auto packing the repository in background for optimum performance.
+See "git help gc" for manual housekeeping.
+warning: The last gc run reported the following. Please correct the root cause
+and remove .git/gc.log
+Automatic cleanup will not be performed until the file is removed.
+
+warning: There are too many unreachable loose objects; run 'git prune' to remove them.
+
+[main efa4dfc] Added h1 tag
+ 2 files changed, 2 deletions(-)
+ delete mode 100644 1.py
+ delete mode 100644 README.md
+asanalibolat@Asanalis-MacBook-Air work % git status
+warning: could not open directory '.Trash/': Operation not permitted
+warning: could not open directory 'Documents/': Operation not permitted
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../../../../.CFUserTextEncoding
+	../../../../.DS_Store
+	../../../../.cups/
+	../../../../.dbclient/
+	../../../../.gitconfig
+	../../../../.gitconfig.swp
+	../../../../.idlerc/
+	../../../../.local/
+	../../../../.swiftpm/
+	../../../../.viminfo
+	../../../../.vscode/
+	../../../../.zprofile
+	../../../../.zprofile.pysave
+	../../../../.zsh_history
+	../../../../.zsh_sessions/
+	../../../../Applications/
+	../../../../DataGripProjects/
+	../../../.DS_Store
+	../../../.localized
+	../../../472633114_18483765187056474_6860639151999544586_n.jpg
+	../../../Amethyst/
+	../../../Garnet/
+	../../../Git_Cheat_Sheet.pdf
+	../../../Lecture 2. Descriptive Statistics.pdf
+	../../../Lecture 3. Descriptive Statistics (cont.).pdf
+	../../../Seminar 2. Descriptive Statistics.pdf
+	../../../Seminar 3. Descriptive Statistics (cont.).pdf
+	../../../VS/
+	../../../and Pearl/
+	../../../and Steven!/
+	../../.DS_Store
+	../../files/
+	../.DS_Store
+	.DS_Store
+	../../../../Downloads/
+	../../../../Library/
+	../../../../Movies/
+	../../../../Music/
+	../../../../Pictures/
+	../../../../Public/
+	../../../../lol/
+	../../../../work/
+
+nothing added to commit but untracked files present (use "git add" to track)
+asanalibolat@Asanalis-MacBook-Air work % git add hello.html 
+asanalibolat@Asanalis-MacBook-Air work % git commit -a
+warning: could not open directory '.Trash/': Operation not permitted
+warning: could not open directory 'Documents/': Operation not permitted
+warning: could not open directory '.Trash/': Operation not permitted
+warning: could not open directory 'Documents/': Operation not permitted
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../../../../.CFUserTextEncoding
+	../../../../.DS_Store
+	../../../../.cups/
+	../../../../.dbclient/
+	../../../../.gitconfig
+	../../../../.gitconfig.swp
+	../../../../.idlerc/
+	../../../../.local/
+	../../../../.swiftpm/
+	../../../../.viminfo
+	../../../../.vscode/
+	../../../../.zprofile
+	../../../../.zprofile.pysave
+	../../../../.zsh_history
+	../../../../.zsh_sessions/
+	../../../../Applications/
+	../../../../DataGripProjects/
+	../../../.DS_Store
+	../../../.localized
+	../../../472633114_18483765187056474_6860639151999544586_n.jpg
+	../../../Amethyst/
+	../../../Garnet/
+	../../../Git_Cheat_Sheet.pdf
+	../../../Lecture 2. Descriptive Statistics.pdf
+	../../../Lecture 3. Descriptive Statistics (cont.).pdf
+	../../../Seminar 2. Descriptive Statistics.pdf
+	../../../Seminar 3. Descriptive Statistics (cont.).pdf
+	../../../VS/
+	../../../and Pearl/
+	../../../and Steven!/
+	../../.DS_Store
+	../../files/
+	../.DS_Store
+	.DS_Store
+	../../../../Downloads/
+	../../../../Library/
+	../../../../Movies/
+	../../../../Music/
+	../../../../Pictures/
+	../../../../Public/
+	../../../../lol/
+	../../../../work/
+
+nothing added to commit but untracked files present (use "git add" to track)
+asanalibolat@Asanalis-MacBook-Air work % touch hello.html
+asanalibolat@Asanalis-MacBook-Air work % git commit -a
+warning: could not open directory '.Trash/': Operation not permitted
+warning: could not open directory 'Documents/': Operation not permitted
+warning: could not open directory '.Trash/': Operation not permitted
+warning: could not open directory 'Documents/': Operation not permitted
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../../../../.CFUserTextEncoding
+	../../../../.DS_Store
+	../../../../.cups/
+	../../../../.dbclient/
+	../../../../.gitconfig
+	../../../../.gitconfig.swp
+	../../../../.idlerc/
+	../../../../.local/
+	../../../../.swiftpm/
+	../../../../.viminfo
+	../../../../.vscode/
+	../../../../.zprofile
+	../../../../.zprofile.pysave
+	../../../../.zsh_history
+	../../../../.zsh_sessions/
+	../../../../Applications/
+	../../../../DataGripProjects/
+	../../../.DS_Store
+	../../../.localized
+	../../../472633114_18483765187056474_6860639151999544586_n.jpg
+	../../../Amethyst/
+	../../../Garnet/
+	../../../Git_Cheat_Sheet.pdf
+	../../../Lecture 2. Descriptive Statistics.pdf
+	../../../Lecture 3. Descriptive Statistics (cont.).pdf
+	../../../Seminar 2. Descriptive Statistics.pdf
+	../../../Seminar 3. Descriptive Statistics (cont.).pdf
+	../../../VS/
+	../../../and Pearl/
+	../../../and Steven!/
+	../../.DS_Store
+	../../files/
+	../.DS_Store
+	.DS_Store
+	../../../../Downloads/
+	../../../../Library/
+	../../../../Movies/
+	../../../../Music/
+	../../../../Pictures/
+	../../../../Public/
+	../../../../lol/
+	../../../../work/
+
+nothing added to commit but untracked files present (use "git add" to track)
+asanalibolat@Asanalis-MacBook-Air work % git add hello.html
+asanalibolat@Asanalis-MacBook-Air work % git status
+warning: could not open directory '.Trash/': Operation not permitted
+warning: could not open directory 'Documents/': Operation not permitted
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   hello.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   hello.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../../../../.CFUserTextEncoding
+	../../../../.DS_Store
+	../../../../.cups/
+	../../../../.dbclient/
+	../../../../.gitconfig
+	../../../../.gitconfig.swp
+	../../../../.idlerc/
+	../../../../.local/
+	../../../../.swiftpm/
+	../../../../.viminfo
+	../../../../.vscode/
+	../../../../.zprofile
+	../../../../.zprofile.pysave
+	../../../../.zsh_history
+	../../../../.zsh_sessions/
+	../../../../Applications/
+	../../../../DataGripProjects/
+	../../../.DS_Store
+	../../../.localized
+	../../../472633114_18483765187056474_6860639151999544586_n.jpg
+	../../../Amethyst/
+	../../../Garnet/
+	../../../Git_Cheat_Sheet.pdf
+	../../../Lecture 2. Descriptive Statistics.pdf
+	../../../Lecture 3. Descriptive Statistics (cont.).pdf
+	../../../Seminar 2. Descriptive Statistics.pdf
+	../../../Seminar 3. Descriptive Statistics (cont.).pdf
+	../../../VS/
+	../../../and Pearl/
+	../../../and Steven!/
+	../../.DS_Store
+	../../files/
+	../.DS_Store
+	.DS_Store
+	../../../../Downloads/
+	../../../../Library/
+	../../../../Movies/
+	../../../../Music/
+	../../../../Pictures/
+	../../../../Public/
+	../../../../lol/
+	../../../../work/
+
+asanalibolat@Asanalis-MacBook-Air work % git status
+warning: could not open directory '.Trash/': Operation not permitted
+warning: could not open directory 'Documents/': Operation not permitted
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   hello.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   hello.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../../../../.CFUserTextEncoding
+	../../../../.DS_Store
+	../../../../.cups/
+	../../../../.dbclient/
+	../../../../.gitconfig
+	../../../../.gitconfig.swp
+	../../../../.idlerc/
+	../../../../.local/
+	../../../../.swiftpm/
+	../../../../.viminfo
+	../../../../.vscode/
+	../../../../.zprofile
+	../../../../.zprofile.pysave
+	../../../../.zsh_history
+	../../../../.zsh_sessions/
+	../../../../Applications/
+	../../../../DataGripProjects/
+	../../../.DS_Store
+	../../../.localized
+	../../../472633114_18483765187056474_6860639151999544586_n.jpg
+	../../../Amethyst/
+	../../../Garnet/
+	../../../Git_Cheat_Sheet.pdf
+	../../../Lecture 2. Descriptive Statistics.pdf
+	../../../Lecture 3. Descriptive Statistics (cont.).pdf
+	../../../Seminar 2. Descriptive Statistics.pdf
+	../../../Seminar 3. Descriptive Statistics (cont.).pdf
+	../../../VS/
+	../../../and Pearl/
+	../../../and Steven!/
+	../../.DS_Store
+	../../files/
+	../.DS_Store
+	.DS_Store
+	../../../../Downloads/
+	../../../../Library/
+	../../../../Movies/
+	../../../../Music/
+	../../../../Pictures/
+	../../../../Public/
+	../../../../lol/
+	../../../../work/
+
+asanalibolat@Asanalis-MacBook-Air work % git commit -m "lol"
+Auto packing the repository in background for optimum performance.
+See "git help gc" for manual housekeeping.
+warning: The last gc run reported the following. Please correct the root cause
+and remove .git/gc.log
+Automatic cleanup will not be performed until the file is removed.
+
+warning: There are too many unreachable loose objects; run 'git prune' to remove them.
+
+[main 420807c] lol
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+asanalibolat@Asanalis-MacBook-Air work % git status
+warning: could not open directory '.Trash/': Operation not permitted
+warning: could not open directory 'Documents/': Operation not permitted
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   hello.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../../../../.CFUserTextEncoding
+	../../../../.DS_Store
+	../../../../.cups/
+	../../../../.dbclient/
+	../../../../.gitconfig
+	../../../../.gitconfig.swp
+	../../../../.idlerc/
+	../../../../.local/
+	../../../../.swiftpm/
+	../../../../.viminfo
+	../../../../.vscode/
+	../../../../.zprofile
+	../../../../.zprofile.pysave
+	../../../../.zsh_history
+	../../../../.zsh_sessions/
+	../../../../Applications/
+	../../../../DataGripProjects/
+	../../../.DS_Store
+	../../../.localized
+	../../../472633114_18483765187056474_6860639151999544586_n.jpg
+	../../../Amethyst/
+	../../../Garnet/
+	../../../Git_Cheat_Sheet.pdf
+	../../../Lecture 2. Descriptive Statistics.pdf
+	../../../Lecture 3. Descriptive Statistics (cont.).pdf
+	../../../Seminar 2. Descriptive Statistics.pdf
+	../../../Seminar 3. Descriptive Statistics (cont.).pdf
+	../../../VS/
+	../../../and Pearl/
+	../../../and Steven!/
+	../../.DS_Store
+	../../files/
+	../.DS_Store
+	.DS_Store
+	../../../../Downloads/
+	../../../../Library/
+	../../../../Movies/
+	../../../../Music/
+	../../../../Pictures/
+	../../../../Public/
+	../../../../lol/
+	../../../../work/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+asanalibolat@Asanalis-MacBook-Air work % git add .
+asanalibolat@Asanalis-MacBook-Air work % git status
+warning: could not open directory '.Trash/': Operation not permitted
+warning: could not open directory 'Documents/': Operation not permitted
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   .DS_Store
+	modified:   hello.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../../../../.CFUserTextEncoding
+	../../../../.DS_Store
+	../../../../.cups/
+	../../../../.dbclient/
+	../../../../.gitconfig
+	../../../../.gitconfig.swp
+	../../../../.idlerc/
+	../../../../.local/
+	../../../../.swiftpm/
+	../../../../.viminfo
+	../../../../.vscode/
+	../../../../.zprofile
+	../../../../.zprofile.pysave
+	../../../../.zsh_history
+	../../../../.zsh_sessions/
+	../../../../Applications/
+	../../../../DataGripProjects/
+	../../../.DS_Store
+	../../../.localized
+	../../../472633114_18483765187056474_6860639151999544586_n.jpg
+	../../../Amethyst/
+	../../../Garnet/
+	../../../Git_Cheat_Sheet.pdf
+	../../../Lecture 2. Descriptive Statistics.pdf
+	../../../Lecture 3. Descriptive Statistics (cont.).pdf
+	../../../Seminar 2. Descriptive Statistics.pdf
+	../../../Seminar 3. Descriptive Statistics (cont.).pdf
+	../../../VS/
+	../../../and Pearl/
+	../../../and Steven!/
+	../../.DS_Store
+	../../files/
+	../.DS_Store
+	../../../../Downloads/
+	../../../../Library/
+	../../../../Movies/
+	../../../../Music/
+	../../../../Pictures/
+	../../../../Public/
+	../../../../lol/
+	../../../../work/
+
+asanalibolat@Asanalis-MacBook-Air work % git add        ../../../../work/
+warning: adding embedded git repository: work
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint: 
+hint: 	git submodule add <url> work
+hint: 
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint: 
+hint: 	git rm --cached work
+hint: 
+hint: See "git help submodule" for more information.
+asanalibolat@Asanalis-MacBook-Air work % git commit -m "lol"
+Auto packing the repository in background for optimum performance.
+See "git help gc" for manual housekeeping.
+warning: The last gc run reported the following. Please correct the root cause
+and remove .git/gc.log
+Automatic cleanup will not be performed until the file is removed.
+
+warning: There are too many unreachable loose objects; run 'git prune' to remove them.
+
+[main 54f2880] lol
+ 3 files changed, 2 insertions(+), 2 deletions(-)
+ create mode 100644 Desktop/githowto/repositories/work/.DS_Store
+ create mode 160000 work
+asanalibolat@Asanalis-MacBook-Air work % git prune
+asanalibolat@Asanalis-MacBook-Air work % git log
+commit 54f288065427983cab02db696f7c8b55859c7291 (HEAD -> main)
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:41:17 2025 +0500
+
+    lol
+
+commit 420807c84e222d07d99482c98675b833cabf74e5
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:39:08 2025 +0500
+
+    lol
+
+commit efa4dfc67f4a08fdfe32feb94463a3c1ce31dffb
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:31:55 2025 +0500
+
+    Added h1 tag
+
+commit db7f88670aa262d27f93f6a75e69305d16302b12
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Thu Sep 18 12:22:40 2025 +0500
+
+    commots to a and b
+
+commit d3358501a12e42c447f45392d981332b96ff48bf
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Fri Sep 12 16:21:45 2025 +0500
+
+    first commit
+
+commit 8d4d6f44520cf36b399ce8b7929c54b8e6941c24 (origin/main)
+Author: Asanali Bolat <129151573+Asanalib@users.noreply.github.com>
+Date:   Fri Sep 12 15:56:04 2025 +0500
+
+    Create 1.py
+ ESCOD
+commit efa4dfc67f4a08fdfe32feb94463a3c1ce31dffb
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:31:55 2025 +0500
+
+    Added h1 tag
+
+commit db7f88670aa262d27f93f6a75e69305d16302b12
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Thu Sep 18 12:22:40 2025 +0500
+
+    commots to a and b
+
+commit d3358501a12e42c447f45392d981332b96ff48bf
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Fri Sep 12 16:21:45 2025 +0500
+
+    first commit
+
+commit 8d4d6f44520cf36b399ce8b7929c54b8e6941c24 (origin/main)
+Author: Asanali Bolat <129151573+Asanalib@users.noreply.github.com>
+Date:   Fri Sep 12 15:56:04 2025 +0500
+
+    Create 1.py
+ ESCOD
+commit efa4dfc67f4a08fdfe32feb94463a3c1ce31dffb
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:31:55 2025 +0500
+
+    Added h1 tag
+
+commit db7f88670aa262d27f93f6a75e69305d16302b12
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Thu Sep 18 12:22:40 2025 +0500
+
+    commots to a and b
+
+commit d3358501a12e42c447f45392d981332b96ff48bf
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Fri Sep 12 16:21:45 2025 +0500
+
+    first commit
+
+commit 8d4d6f44520cf36b399ce8b7929c54b8e6941c24 (origin/main)
+Author: Asanali Bolat <129151573+Asanalib@users.noreply.github.com>
+Date:   Fri Sep 12 15:56:04 2025 +0500
+
+    Create 1.py
+(END)
+commit efa4dfc67f4a08fdfe32feb94463a3c1ce31dffb
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:31:55 2025 +0500
+
+    Added h1 tag
+
+commit db7f88670aa262d27f93f6a75e69305d16302b12
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Thu Sep 18 12:22:40 2025 +0500
+
+    commots to a and b
+
+commit d3358501a12e42c447f45392d981332b96ff48bf
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Fri Sep 12 16:21:45 2025 +0500
+
+    first commit
+
+commit 8d4d6f44520cf36b399ce8b7929c54b8e6941c24 (origin/main)
+Author: Asanali Bolat <129151573+Asanalib@users.noreply.github.com>
+Date:   Fri Sep 12 15:56:04 2025 +0500
+
+    Create 1.py
+(END)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit efa4dfc67f4a08fdfe32feb94463a3c1ce31dffb
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:31:55 2025 +0500
+
+    Added h1 tag
+
+commit db7f88670aa262d27f93f6a75e69305d16302b12
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Thu Sep 18 12:22:40 2025 +0500
+
+    commots to a and b
+
+commit d3358501a12e42c447f45392d981332b96ff48bf
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Fri Sep 12 16:21:45 2025 +0500
+
+    first commit
+
+commit 8d4d6f44520cf36b399ce8b7929c54b8e6941c24 (origin/main)
+Author: Asanali Bolat <129151573+Asanalib@users.noreply.github.com>
+Date:   Fri Sep 12 15:56:04 2025 +0500
+
+    Create 1.py
+(END)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit efa4dfc67f4a08fdfe32feb94463a3c1ce31dffb
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:31:55 2025 +0500
+
+    Added h1 tag
+
+commit db7f88670aa262d27f93f6a75e69305d16302b12
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Thu Sep 18 12:22:40 2025 +0500
+
+    commots to a and b
+
+commit d3358501a12e42c447f45392d981332b96ff48bf
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Fri Sep 12 16:21:45 2025 +0500
+
+    first commit
+
+commit 8d4d6f44520cf36b399ce8b7929c54b8e6941c24 (origin/main)
+Author: Asanali Bolat <129151573+Asanalib@users.noreply.github.com>
+Date:   Fri Sep 12 15:56:04 2025 +0500
+
+    Create 1.py
+~
+(END)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit efa4dfc67f4a08fdfe32feb94463a3c1ce31dffb
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:31:55 2025 +0500
+
+    Added h1 tag
+
+commit db7f88670aa262d27f93f6a75e69305d16302b12
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Thu Sep 18 12:22:40 2025 +0500
+
+    commots to a and b
+
+commit d3358501a12e42c447f45392d981332b96ff48bf
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Fri Sep 12 16:21:45 2025 +0500
+
+    first commit
+
+commit 8d4d6f44520cf36b399ce8b7929c54b8e6941c24 (origin/main)
+Author: Asanali Bolat <129151573+Asanalib@users.noreply.github.com>
+Date:   Fri Sep 12 15:56:04 2025 +0500
+
+    Create 1.py
+~
+~
+(END)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit efa4dfc67f4a08fdfe32feb94463a3c1ce31dffb
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:31:55 2025 +0500
+
+    Added h1 tag
+
+commit db7f88670aa262d27f93f6a75e69305d16302b12
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Thu Sep 18 12:22:40 2025 +0500
+
+    commots to a and b
+
+commit d3358501a12e42c447f45392d981332b96ff48bf
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Fri Sep 12 16:21:45 2025 +0500
+
+    first commit
+
+commit 8d4d6f44520cf36b399ce8b7929c54b8e6941c24 (origin/main)
+Author: Asanali Bolat <129151573+Asanalib@users.noreply.github.com>
+Date:   Fri Sep 12 15:56:04 2025 +0500
+
+    Create 1.py
+~
+~
+~
+(END)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit efa4dfc67f4a08fdfe32feb94463a3c1ce31dffb
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:31:55 2025 +0500
+
+    Added h1 tag
+
+commit db7f88670aa262d27f93f6a75e69305d16302b12
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Thu Sep 18 12:22:40 2025 +0500
+
+    commots to a and b
+
+commit d3358501a12e42c447f45392d981332b96ff48bf
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Fri Sep 12 16:21:45 2025 +0500
+
+    first commit
+
+commit 8d4d6f44520cf36b399ce8b7929c54b8e6941c24 (origin/main)
+Author: Asanali Bolat <129151573+Asanalib@users.noreply.github.com>
+Date:   Fri Sep 12 15:56:04 2025 +0500
+
+    Create 1.py
+~
+~
+~
+~
+~
+(END)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit efa4dfc67f4a08fdfe32feb94463a3c1ce31dffb
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:31:55 2025 +0500
+
+    Added h1 tag
+
+commit db7f88670aa262d27f93f6a75e69305d16302b12
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Thu Sep 18 12:22:40 2025 +0500
+
+    commots to a and b
+
+commit d3358501a12e42c447f45392d981332b96ff48bf
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Fri Sep 12 16:21:45 2025 +0500
+
+    first commit
+
+commit 8d4d6f44520cf36b399ce8b7929c54b8e6941c24 (origin/main)
+Author: Asanali Bolat <129151573+Asanalib@users.noreply.github.com>
+Date:   Fri Sep 12 15:56:04 2025 +0500
+
+    Create 1.py
+~
+~
+~
+~
+~
+~
+~
+(END)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit efa4dfc67f4a08fdfe32feb94463a3c1ce31dffb
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:31:55 2025 +0500
+
+    Added h1 tag
+
+commit db7f88670aa262d27f93f6a75e69305d16302b12
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Thu Sep 18 12:22:40 2025 +0500
+
+    commots to a and b
+
+commit d3358501a12e42c447f45392d981332b96ff48bf
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Fri Sep 12 16:21:45 2025 +0500
+
+    first commit
+
+commit 8d4d6f44520cf36b399ce8b7929c54b8e6941c24 (origin/main)
+Author: Asanali Bolat <129151573+Asanalib@users.noreply.github.com>
+Date:   Fri Sep 12 15:56:04 2025 +0500
+
+    Create 1.py
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit efa4dfc67f4a08fdfe32feb94463a3c1ce31dffb
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:31:55 2025 +0500
+
+    Added h1 tag
+
+commit db7f88670aa262d27f93f6a75e69305d16302b12
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Thu Sep 18 12:22:40 2025 +0500
+
+    commots to a and b
+
+commit d3358501a12e42c447f45392d981332b96ff48bf
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Fri Sep 12 16:21:45 2025 +0500
+
+    first commit
+
+commit 8d4d6f44520cf36b399ce8b7929c54b8e6941c24 (origin/main)
+Author: Asanali Bolat <129151573+Asanalib@users.noreply.github.com>
+Date:   Fri Sep 12 15:56:04 2025 +0500
+
+    Create 1.py
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit efa4dfc67f4a08fdfe32feb94463a3c1ce31dffb
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:31:55 2025 +0500
+
+    Added h1 tag
+
+commit db7f88670aa262d27f93f6a75e69305d16302b12
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Thu Sep 18 12:22:40 2025 +0500
+
+    commots to a and b
+
+commit d3358501a12e42c447f45392d981332b96ff48bf
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Fri Sep 12 16:21:45 2025 +0500
+
+    first commit
+
+commit 8d4d6f44520cf36b399ce8b7929c54b8e6941c24 (origin/main)
+Author: Asanali Bolat <129151573+Asanalib@users.noreply.github.com>
+Date:   Fri Sep 12 15:56:04 2025 +0500
+
+    Create 1.py
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit efa4dfc67f4a08fdfe32feb94463a3c1ce31dffb
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:31:55 2025 +0500
+
+    Added h1 tag
+
+commit db7f88670aa262d27f93f6a75e69305d16302b12
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Thu Sep 18 12:22:40 2025 +0500
+
+    commots to a and b
+
+commit d3358501a12e42c447f45392d981332b96ff48bf
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Fri Sep 12 16:21:45 2025 +0500
+
+    first commit
+
+commit 8d4d6f44520cf36b399ce8b7929c54b8e6941c24 (origin/main)
+Author: Asanali Bolat <129151573+Asanalib@users.noreply.github.com>
+Date:   Fri Sep 12 15:56:04 2025 +0500
+
+    Create 1.py
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit efa4dfc67f4a08fdfe32feb94463a3c1ce31dffb
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:31:55 2025 +0500
+
+    Added h1 tag
+
+commit db7f88670aa262d27f93f6a75e69305d16302b12
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Thu Sep 18 12:22:40 2025 +0500
+
+    commots to a and b
+
+commit d3358501a12e42c447f45392d981332b96ff48bf
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Fri Sep 12 16:21:45 2025 +0500
+
+    first commit
+
+commit 8d4d6f44520cf36b399ce8b7929c54b8e6941c24 (origin/main)
+Author: Asanali Bolat <129151573+Asanalib@users.noreply.github.com>
+Date:   Fri Sep 12 15:56:04 2025 +0500
+
+    Create 1.py
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit efa4dfc67f4a08fdfe32feb94463a3c1ce31dffb
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:31:55 2025 +0500
+
+    Added h1 tag
+
+commit db7f88670aa262d27f93f6a75e69305d16302b12
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Thu Sep 18 12:22:40 2025 +0500
+
+    commots to a and b
+
+commit d3358501a12e42c447f45392d981332b96ff48bf
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Fri Sep 12 16:21:45 2025 +0500
+
+    first commit
+
+commit 8d4d6f44520cf36b399ce8b7929c54b8e6941c24 (origin/main)
+Author: Asanali Bolat <129151573+Asanalib@users.noreply.github.com>
+Date:   Fri Sep 12 15:56:04 2025 +0500
+
+    Create 1.py
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
+
+
+
+
+
+
+
+
+
+
+
+commit efa4dfc67f4a08fdfe32feb94463a3c1ce31dffb
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:31:55 2025 +0500
+
+    Added h1 tag
+
+commit db7f88670aa262d27f93f6a75e69305d16302b12
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Thu Sep 18 12:22:40 2025 +0500
+
+    commots to a and b
+
+commit d3358501a12e42c447f45392d981332b96ff48bf
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Fri Sep 12 16:21:45 2025 +0500
+
+    first commit
+
+commit 8d4d6f44520cf36b399ce8b7929c54b8e6941c24 (origin/main)
+Author: Asanali Bolat <129151573+Asanalib@users.noreply.github.com>
+Date:   Fri Sep 12 15:56:04 2025 +0500
+
+    Create 1.py
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
+
+
+
+
+
+
+
+
+
+commit efa4dfc67f4a08fdfe32feb94463a3c1ce31dffb
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:31:55 2025 +0500
+
+    Added h1 tag
+
+commit db7f88670aa262d27f93f6a75e69305d16302b12
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Thu Sep 18 12:22:40 2025 +0500
+
+    commots to a and b
+
+commit d3358501a12e42c447f45392d981332b96ff48bf
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Fri Sep 12 16:21:45 2025 +0500
+
+    first commit
+
+commit 8d4d6f44520cf36b399ce8b7929c54b8e6941c24 (origin/main)
+Author: Asanali Bolat <129151573+Asanalib@users.noreply.github.com>
+Date:   Fri Sep 12 15:56:04 2025 +0500
+
+    Create 1.py
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
+
+
+
+
+
+
+
+commit efa4dfc67f4a08fdfe32feb94463a3c1ce31dffb
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:31:55 2025 +0500
+
+    Added h1 tag
+
+commit db7f88670aa262d27f93f6a75e69305d16302b12
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Thu Sep 18 12:22:40 2025 +0500
+
+    commots to a and b
+
+commit d3358501a12e42c447f45392d981332b96ff48bf
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Fri Sep 12 16:21:45 2025 +0500
+
+    first commit
+
+commit 8d4d6f44520cf36b399ce8b7929c54b8e6941c24 (origin/main)
+Author: Asanali Bolat <129151573+Asanalib@users.noreply.github.com>
+Date:   Fri Sep 12 15:56:04 2025 +0500
+
+    Create 1.py
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
+
+
+
+
+
+commit efa4dfc67f4a08fdfe32feb94463a3c1ce31dffb
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:31:55 2025 +0500
+
+    Added h1 tag
+
+commit db7f88670aa262d27f93f6a75e69305d16302b12
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Thu Sep 18 12:22:40 2025 +0500
+
+    commots to a and b
+
+commit d3358501a12e42c447f45392d981332b96ff48bf
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Fri Sep 12 16:21:45 2025 +0500
+
+    first commit
+
+commit 8d4d6f44520cf36b399ce8b7929c54b8e6941c24 (origin/main)
+Author: Asanali Bolat <129151573+Asanalib@users.noreply.github.com>
+Date:   Fri Sep 12 15:56:04 2025 +0500
+
+    Create 1.py
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
+
+
+
+
+commit efa4dfc67f4a08fdfe32feb94463a3c1ce31dffb
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:31:55 2025 +0500
+
+    Added h1 tag
+
+commit db7f88670aa262d27f93f6a75e69305d16302b12
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Thu Sep 18 12:22:40 2025 +0500
+
+    commots to a and b
+
+commit d3358501a12e42c447f45392d981332b96ff48bf
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Fri Sep 12 16:21:45 2025 +0500
+
+    first commit
+
+commit 8d4d6f44520cf36b399ce8b7929c54b8e6941c24 (origin/main)
+Author: Asanali Bolat <129151573+Asanalib@users.noreply.github.com>
+Date:   Fri Sep 12 15:56:04 2025 +0500
+
+    Create 1.py
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
+
+
+commit efa4dfc67f4a08fdfe32feb94463a3c1ce31dffb
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:31:55 2025 +0500
+
+    Added h1 tag
+
+commit db7f88670aa262d27f93f6a75e69305d16302b12
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Thu Sep 18 12:22:40 2025 +0500
+
+    commots to a and b
+
+commit d3358501a12e42c447f45392d981332b96ff48bf
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Fri Sep 12 16:21:45 2025 +0500
+
+    first commit
+
+commit 8d4d6f44520cf36b399ce8b7929c54b8e6941c24 (origin/main)
+Author: Asanali Bolat <129151573+Asanalib@users.noreply.github.com>
+Date:   Fri Sep 12 15:56:04 2025 +0500
+
+    Create 1.py
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
+
+commit efa4dfc67f4a08fdfe32feb94463a3c1ce31dffb
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:31:55 2025 +0500
+
+    Added h1 tag
+
+commit db7f88670aa262d27f93f6a75e69305d16302b12
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Thu Sep 18 12:22:40 2025 +0500
+
+    commots to a and b
+
+commit d3358501a12e42c447f45392d981332b96ff48bf
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Fri Sep 12 16:21:45 2025 +0500
+
+    first commit
+
+commit 8d4d6f44520cf36b399ce8b7929c54b8e6941c24 (origin/main)
+Author: Asanali Bolat <129151573+Asanalib@users.noreply.github.com>
+Date:   Fri Sep 12 15:56:04 2025 +0500
+
+    Create 1.py
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
+
+commit efa4dfc67f4a08fdfe32feb94463a3c1ce31dffb
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:31:55 2025 +0500
+
+    Added h1 tag
+
+commit db7f88670aa262d27f93f6a75e69305d16302b12
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Thu Sep 18 12:22:40 2025 +0500
+
+    commots to a and b
+
+commit d3358501a12e42c447f45392d981332b96ff48bf
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Fri Sep 12 16:21:45 2025 +0500
+
+    first commit
+
+commit 8d4d6f44520cf36b399ce8b7929c54b8e6941c24 (origin/main)
+Author: Asanali Bolat <129151573+Asanalib@users.noreply.github.com>
+Date:   Fri Sep 12 15:56:04 2025 +0500
+
+    Create 1.py
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
+commit efa4dfc67f4a08fdfe32feb94463a3c1ce31dffb
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:31:55 2025 +0500
+
+    Added h1 tag
+
+commit db7f88670aa262d27f93f6a75e69305d16302b12
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Thu Sep 18 12:22:40 2025 +0500
+
+    commots to a and b
+
+commit d3358501a12e42c447f45392d981332b96ff48bf
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Fri Sep 12 16:21:45 2025 +0500
+
+    first commit
+
+commit 8d4d6f44520cf36b399ce8b7929c54b8e6941c24 (origin/main)
+Author: Asanali Bolat <129151573+Asanalib@users.noreply.github.com>
+Date:   Fri Sep 12 15:56:04 2025 +0500
+
+    Create 1.py
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
+commit efa4dfc67f4a08fdfe32feb94463a3c1ce31dffb
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:31:55 2025 +0500
+
+    Added h1 tag
+
+commit db7f88670aa262d27f93f6a75e69305d16302b12
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Thu Sep 18 12:22:40 2025 +0500
+
+    commots to a and b
+
+commit d3358501a12e42c447f45392d981332b96ff48bf
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Fri Sep 12 16:21:45 2025 +0500
+
+    first commit
+
+commit 8d4d6f44520cf36b399ce8b7929c54b8e6941c24 (origin/main)
+Author: Asanali Bolat <129151573+Asanalib@users.noreply.github.com>
+Date:   Fri Sep 12 15:56:04 2025 +0500
+
+    Create 1.py
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
+commit efa4dfc67f4a08fdfe32feb94463a3c1ce31dffb
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:31:55 2025 +0500
+
+    Added h1 tag
+
+commit db7f88670aa262d27f93f6a75e69305d16302b12
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Thu Sep 18 12:22:40 2025 +0500
+
+    commots to a and b
+
+commit d3358501a12e42c447f45392d981332b96ff48bf
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Fri Sep 12 16:21:45 2025 +0500
+
+    first commit
+
+commit 8d4d6f44520cf36b399ce8b7929c54b8e6941c24 (origin/main)
+Author: Asanali Bolat <129151573+Asanalib@users.noreply.github.com>
+Date:   Fri Sep 12 15:56:04 2025 +0500
+
+    Create 1.py
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
+commit efa4dfc67f4a08fdfe32feb94463a3c1ce31dffb
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:31:55 2025 +0500
+
+    Added h1 tag
+
+commit db7f88670aa262d27f93f6a75e69305d16302b12
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Thu Sep 18 12:22:40 2025 +0500
+
+    commots to a and b
+
+commit d3358501a12e42c447f45392d981332b96ff48bf
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Fri Sep 12 16:21:45 2025 +0500
+
+    first commit
+
+commit 8d4d6f44520cf36b399ce8b7929c54b8e6941c24 (origin/main)
+Author: Asanali Bolat <129151573+Asanalib@users.noreply.github.com>
+Date:   Fri Sep 12 15:56:04 2025 +0500
+
+    Create 1.py
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
+commit efa4dfc67f4a08fdfe32feb94463a3c1ce31dffb
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:31:55 2025 +0500
+
+    Added h1 tag
+
+commit db7f88670aa262d27f93f6a75e69305d16302b12
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Thu Sep 18 12:22:40 2025 +0500
+
+    commots to a and b
+
+commit d3358501a12e42c447f45392d981332b96ff48bf
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Fri Sep 12 16:21:45 2025 +0500
+
+    first commit
+
+commit 8d4d6f44520cf36b399ce8b7929c54b8e6941c24 (origin/main)
+Author: Asanali Bolat <129151573+Asanalib@users.noreply.github.com>
+Date:   Fri Sep 12 15:56:04 2025 +0500
+
+    Create 1.py
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
+commit efa4dfc67f4a08fdfe32feb94463a3c1ce31dffb
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:31:55 2025 +0500
+
+    Added h1 tag
+
+commit db7f88670aa262d27f93f6a75e69305d16302b12
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Thu Sep 18 12:22:40 2025 +0500
+
+    commots to a and b
+
+commit d3358501a12e42c447f45392d981332b96ff48bf
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Fri Sep 12 16:21:45 2025 +0500
+
+    first commit
+
+commit 8d4d6f44520cf36b399ce8b7929c54b8e6941c24 (origin/main)
+Author: Asanali Bolat <129151573+Asanalib@users.noreply.github.com>
+Date:   Fri Sep 12 15:56:04 2025 +0500
+
+    Create 1.py
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
+commit efa4dfc67f4a08fdfe32feb94463a3c1ce31dffb
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:31:55 2025 +0500
+
+    Added h1 tag
+
+commit db7f88670aa262d27f93f6a75e69305d16302b12
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Thu Sep 18 12:22:40 2025 +0500
+
+    commots to a and b
+
+commit d3358501a12e42c447f45392d981332b96ff48bf
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Fri Sep 12 16:21:45 2025 +0500
+
+    first commit
+
+commit 8d4d6f44520cf36b399ce8b7929c54b8e6941c24 (origin/main)
+Author: Asanali Bolat <129151573+Asanalib@users.noreply.github.com>
+Date:   Fri Sep 12 15:56:04 2025 +0500
+
+    Create 1.py
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
+commit efa4dfc67f4a08fdfe32feb94463a3c1ce31dffb
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:31:55 2025 +0500
+
+    Added h1 tag
+
+commit db7f88670aa262d27f93f6a75e69305d16302b12
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Thu Sep 18 12:22:40 2025 +0500
+
+    commots to a and b
+
+commit d3358501a12e42c447f45392d981332b96ff48bf
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Fri Sep 12 16:21:45 2025 +0500
+
+    first commit
+
+commit 8d4d6f44520cf36b399ce8b7929c54b8e6941c24 (origin/main)
+Author: Asanali Bolat <129151573+Asanalib@users.noreply.github.com>
+Date:   Fri Sep 12 15:56:04 2025 +0500
+
+    Create 1.py
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
+commit efa4dfc67f4a08fdfe32feb94463a3c1ce31dffb
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:31:55 2025 +0500
+
+    Added h1 tag
+
+commit db7f88670aa262d27f93f6a75e69305d16302b12
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Thu Sep 18 12:22:40 2025 +0500
+
+    commots to a and b
+
+commit d3358501a12e42c447f45392d981332b96ff48bf
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Fri Sep 12 16:21:45 2025 +0500
+
+    first commit
+
+commit 8d4d6f44520cf36b399ce8b7929c54b8e6941c24 (origin/main)
+Author: Asanali Bolat <129151573+Asanalib@users.noreply.github.com>
+Date:   Fri Sep 12 15:56:04 2025 +0500
+
+    Create 1.py
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
+commit efa4dfc67f4a08fdfe32feb94463a3c1ce31dffb
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:31:55 2025 +0500
+
+    Added h1 tag
+
+commit db7f88670aa262d27f93f6a75e69305d16302b12
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Thu Sep 18 12:22:40 2025 +0500
+
+    commots to a and b
+
+commit d3358501a12e42c447f45392d981332b96ff48bf
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Fri Sep 12 16:21:45 2025 +0500
+
+    first commit
+
+commit 8d4d6f44520cf36b399ce8b7929c54b8e6941c24 (origin/main)
+Author: Asanali Bolat <129151573+Asanalib@users.noreply.github.com>
+Date:   Fri Sep 12 15:56:04 2025 +0500
+
+    Create 1.py
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
+commit efa4dfc67f4a08fdfe32feb94463a3c1ce31dffb
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:31:55 2025 +0500
+
+    Added h1 tag
+
+commit db7f88670aa262d27f93f6a75e69305d16302b12
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Thu Sep 18 12:22:40 2025 +0500
+
+    commots to a and b
+
+commit d3358501a12e42c447f45392d981332b96ff48bf
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Fri Sep 12 16:21:45 2025 +0500
+
+    first commit
+
+commit 8d4d6f44520cf36b399ce8b7929c54b8e6941c24 (origin/main)
+Author: Asanali Bolat <129151573+Asanalib@users.noreply.github.com>
+Date:   Fri Sep 12 15:56:04 2025 +0500
+
+    Create 1.py
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
+commit efa4dfc67f4a08fdfe32feb94463a3c1ce31dffb
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:31:55 2025 +0500
+
+    Added h1 tag
+
+commit db7f88670aa262d27f93f6a75e69305d16302b12
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Thu Sep 18 12:22:40 2025 +0500
+
+    commots to a and b
+
+commit d3358501a12e42c447f45392d981332b96ff48bf
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Fri Sep 12 16:21:45 2025 +0500
+
+    first commit
+
+commit 8d4d6f44520cf36b399ce8b7929c54b8e6941c24 (origin/main)
+Author: Asanali Bolat <129151573+Asanalib@users.noreply.github.com>
+Date:   Fri Sep 12 15:56:04 2025 +0500
+
+    Create 1.py
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
+commit efa4dfc67f4a08fdfe32feb94463a3c1ce31dffb
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:31:55 2025 +0500
+
+    Added h1 tag
+
+commit db7f88670aa262d27f93f6a75e69305d16302b12
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Thu Sep 18 12:22:40 2025 +0500
+
+    commots to a and b
+
+commit d3358501a12e42c447f45392d981332b96ff48bf
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Fri Sep 12 16:21:45 2025 +0500
+
+    first commit
+
+commit 8d4d6f44520cf36b399ce8b7929c54b8e6941c24 (origin/main)
+Author: Asanali Bolat <129151573+Asanalib@users.noreply.github.com>
+Date:   Fri Sep 12 15:56:04 2025 +0500
+
+    Create 1.py
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
+commit efa4dfc67f4a08fdfe32feb94463a3c1ce31dffb
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:31:55 2025 +0500
+
+    Added h1 tag
+
+commit db7f88670aa262d27f93f6a75e69305d16302b12
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Thu Sep 18 12:22:40 2025 +0500
+
+    commots to a and b
+
+commit d3358501a12e42c447f45392d981332b96ff48bf
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Fri Sep 12 16:21:45 2025 +0500
+
+    first commit
+
+commit 8d4d6f44520cf36b399ce8b7929c54b8e6941c24 (origin/main)
+Author: Asanali Bolat <129151573+Asanalib@users.noreply.github.com>
+Date:   Fri Sep 12 15:56:04 2025 +0500
+
+    Create 1.py
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
+commit efa4dfc67f4a08fdfe32feb94463a3c1ce31dffb
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:31:55 2025 +0500
+
+    Added h1 tag
+
+commit db7f88670aa262d27f93f6a75e69305d16302b12
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Thu Sep 18 12:22:40 2025 +0500
+
+    commots to a and b
+
+commit d3358501a12e42c447f45392d981332b96ff48bf
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Fri Sep 12 16:21:45 2025 +0500
+
+    first commit
+
+commit 8d4d6f44520cf36b399ce8b7929c54b8e6941c24 (origin/main)
+Author: Asanali Bolat <129151573+Asanalib@users.noreply.github.com>
+Date:   Fri Sep 12 15:56:04 2025 +0500
+
+    Create 1.py
+~
+~
+~
+~
+~
+~
+(END)
+commit efa4dfc67f4a08fdfe32feb94463a3c1ce31dffb
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:31:55 2025 +0500
+
+    Added h1 tag
+
+commit db7f88670aa262d27f93f6a75e69305d16302b12
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Thu Sep 18 12:22:40 2025 +0500
+
+    commots to a and b
+
+commit d3358501a12e42c447f45392d981332b96ff48bf
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Fri Sep 12 16:21:45 2025 +0500
+
+    first commit
+
+commit 8d4d6f44520cf36b399ce8b7929c54b8e6941c24 (origin/main)
+Author: Asanali Bolat <129151573+Asanalib@users.noreply.github.com>
+Date:   Fri Sep 12 15:56:04 2025 +0500
+
+    Create 1.py
+~
+~
+~
+~
+(END)
+commit efa4dfc67f4a08fdfe32feb94463a3c1ce31dffb
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:31:55 2025 +0500
+
+    Added h1 tag
+
+commit db7f88670aa262d27f93f6a75e69305d16302b12
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Thu Sep 18 12:22:40 2025 +0500
+
+    commots to a and b
+
+commit d3358501a12e42c447f45392d981332b96ff48bf
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Fri Sep 12 16:21:45 2025 +0500
+
+    first commit
+
+commit 8d4d6f44520cf36b399ce8b7929c54b8e6941c24 (origin/main)
+Author: Asanali Bolat <129151573+Asanalib@users.noreply.github.com>
+Date:   Fri Sep 12 15:56:04 2025 +0500
+
+    Create 1.py
+~
+~
+~
+(END)
+commit efa4dfc67f4a08fdfe32feb94463a3c1ce31dffb
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:31:55 2025 +0500
+
+    Added h1 tag
+
+commit db7f88670aa262d27f93f6a75e69305d16302b12
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Thu Sep 18 12:22:40 2025 +0500
+
+    commots to a and b
+
+commit d3358501a12e42c447f45392d981332b96ff48bf
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Fri Sep 12 16:21:45 2025 +0500
+
+    first commit
+
+commit 8d4d6f44520cf36b399ce8b7929c54b8e6941c24 (origin/main)
+Author: Asanali Bolat <129151573+Asanalib@users.noreply.github.com>
+Date:   Fri Sep 12 15:56:04 2025 +0500
+
+    Create 1.py
+~
+(END)
+commit efa4dfc67f4a08fdfe32feb94463a3c1ce31dffb
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:31:55 2025 +0500
+
+    Added h1 tag
+
+commit db7f88670aa262d27f93f6a75e69305d16302b12
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Thu Sep 18 12:22:40 2025 +0500
+
+    commots to a and b
+
+commit d3358501a12e42c447f45392d981332b96ff48bf
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Fri Sep 12 16:21:45 2025 +0500
+
+    first commit
+
+commit 8d4d6f44520cf36b399ce8b7929c54b8e6941c24 (origin/main)
+Author: Asanali Bolat <129151573+Asanalib@users.noreply.github.com>
+Date:   Fri Sep 12 15:56:04 2025 +0500
+
+    Create 1.py
+(END)
+commit efa4dfc67f4a08fdfe32feb94463a3c1ce31dffb
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:31:55 2025 +0500
+
+    Added h1 tag
+
+commit db7f88670aa262d27f93f6a75e69305d16302b12
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Thu Sep 18 12:22:40 2025 +0500
+
+    commots to a and b
+
+commit d3358501a12e42c447f45392d981332b96ff48bf
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Fri Sep 12 16:21:45 2025 +0500
+
+    first commit
+
+commit 8d4d6f44520cf36b399ce8b7929c54b8e6941c24 (origin/main)
+Author: Asanali Bolat <129151573+Asanalib@users.noreply.github.com>
+Date:   Fri Sep 12 15:56:04 2025 +0500
+
+    Create 1.py
+(END)
+commit efa4dfc67f4a08fdfe32feb94463a3c1ce31dffb
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:31:55 2025 +0500
+
+    Added h1 tag
+
+commit db7f88670aa262d27f93f6a75e69305d16302b12
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Thu Sep 18 12:22:40 2025 +0500
+
+    commots to a and b
+
+commit d3358501a12e42c447f45392d981332b96ff48bf
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Fri Sep 12 16:21:45 2025 +0500
+
+    first commit
+
+commit 8d4d6f44520cf36b399ce8b7929c54b8e6941c24 (origin/main)
+Author: Asanali Bolat <129151573+Asanalib@users.noreply.github.com>
+Date:   Fri Sep 12 15:56:04 2025 +0500
+
+    Create 1.py
+(END)
+commit 54f288065427983cab02db696f7c8b55859c7291 (HEAD -> main)
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:41:17 2025 +0500
+
+    lol
+
+commit 420807c84e222d07d99482c98675b833cabf74e5
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:39:08 2025 +0500
+
+    lol
+
+commit 54f288065427983cab02db696f7c8b55859c7291 (HEAD -> main)
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:41:17 2025 +0500
+
+    lol
+
+commit 420807c84e222d07d99482c98675b833cabf74e5
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:39:08 2025 +0500
+
+    lol
+
+commit efa4dfc67f4a08fdfe32feb94463a3c1ce31dffb
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:31:55 2025 +0500
+
+    Added h1 tag
+
+commit db7f88670aa262d27f93f6a75e69305d16302b12
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Thu Sep 18 12:22:40 2025 +0500
+
+    commots to a and b
+ ESCOD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit 54f288065427983cab02db696f7c8b55859c7291 (HEAD -> main)
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:41:17 2025 +0500
+
+    lol
+
+commit 420807c84e222d07d99482c98675b833cabf74e5
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:39:08 2025 +0500
+
+    lol
+
+commit efa4dfc67f4a08fdfe32feb94463a3c1ce31dffb
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:31:55 2025 +0500
+
+    Added h1 tag
+
+commit db7f88670aa262d27f93f6a75e69305d16302b12
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Thu Sep 18 12:22:40 2025 +0500
+
+    commots to a and b
+ ESCOD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit 54f288065427983cab02db696f7c8b55859c7291 (HEAD -> main)
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:41:17 2025 +0500
+
+    lol
+
+commit 420807c84e222d07d99482c98675b833cabf74e5
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:39:08 2025 +0500
+
+    lol
+
+commit efa4dfc67f4a08fdfe32feb94463a3c1ce31dffb
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:31:55 2025 +0500
+
+    Added h1 tag
+
+commit db7f88670aa262d27f93f6a75e69305d16302b12
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Thu Sep 18 12:22:40 2025 +0500
+
+    commots to a and b
+ ESCOD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit 54f288065427983cab02db696f7c8b55859c7291 (HEAD -> main)
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:41:17 2025 +0500
+
+    lol
+
+commit 420807c84e222d07d99482c98675b833cabf74e5
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:39:08 2025 +0500
+
+    lol
+
+commit efa4dfc67f4a08fdfe32feb94463a3c1ce31dffb
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:31:55 2025 +0500
+
+    Added h1 tag
+
+commit db7f88670aa262d27f93f6a75e69305d16302b12
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Thu Sep 18 12:22:40 2025 +0500
+
+    commots to a and b
+
+commit d3358501a12e42c447f45392d981332b96ff48bf
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+ ESCOD
+commit 54f288065427983cab02db696f7c8b55859c7291 (HEAD -> main)
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:41:17 2025 +0500
+
+    lol
+
+commit 420807c84e222d07d99482c98675b833cabf74e5
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:39:08 2025 +0500
+
+    lol
+
+commit efa4dfc67f4a08fdfe32feb94463a3c1ce31dffb
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:31:55 2025 +0500
+
+    Added h1 tag
+
+commit db7f88670aa262d27f93f6a75e69305d16302b12
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Thu Sep 18 12:22:40 2025 +0500
+
+    commots to a and b
+
+commit d3358501a12e42c447f45392d981332b96ff48bf
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Fri Sep 12 16:21:45 2025 +0500
+
+    first commit
+
+commit 8d4d6f44520cf36b399ce8b7929c54b8e6941c24 (origin/main)
+Author: Asanali Bolat <129151573+Asanalib@users.noreply.github.com>
+Date:   Fri Sep 12 15:56:04 2025 +0500
+
+    Create 1.py
+
+commit efa4dfc67f4a08fdfe32feb94463a3c1ce31dffb
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:31:55 2025 +0500
+
+    Added h1 tag
+
+commit db7f88670aa262d27f93f6a75e69305d16302b12
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Thu Sep 18 12:22:40 2025 +0500
+
+    commots to a and b
+
+commit d3358501a12e42c447f45392d981332b96ff48bf
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Fri Sep 12 16:21:45 2025 +0500
+
+    first commit
+
+commit 8d4d6f44520cf36b399ce8b7929c54b8e6941c24 (origin/main)
+Author: Asanali Bolat <129151573+Asanalib@users.noreply.github.com>
+Date:   Fri Sep 12 15:56:04 2025 +0500
+
+    Create 1.py
+(END)
+commit efa4dfc67f4a08fdfe32feb94463a3c1ce31dffb
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:31:55 2025 +0500
+
+    Added h1 tag
+
+commit db7f88670aa262d27f93f6a75e69305d16302b12
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Thu Sep 18 12:22:40 2025 +0500
+
+    commots to a and b
+
+commit d3358501a12e42c447f45392d981332b96ff48bf
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Fri Sep 12 16:21:45 2025 +0500
+
+    first commit
+
+commit 8d4d6f44520cf36b399ce8b7929c54b8e6941c24 (origin/main)
+Author: Asanali Bolat <129151573+Asanalib@users.noreply.github.com>
+Date:   Fri Sep 12 15:56:04 2025 +0500
+
+    Create 1.py
+(END)
+commit efa4dfc67f4a08fdfe32feb94463a3c1ce31dffb
+Author: Asanalib <universekrovat@gmail.com>
+Date:   Thu Sep 18 12:31:55 2025 +0500
+
+    Added h1 tag
+
+commit db7f88670aa262d27f93f6a75e69305d16302b12
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Thu Sep 18 12:22:40 2025 +0500
+
+    commots to a and b
+
+commit d3358501a12e42c447f45392d981332b96ff48bf
+Author: Асанали Болат <asanalibolat@Asanalis-MacBook-Air.local>
+Date:   Fri Sep 12 16:21:45 2025 +0500
+
+    first commit
+
+commit 8d4d6f44520cf36b399ce8b7929c54b8e6941c24 (origin/main)
+Author: Asanali Bolat <129151573+Asanalib@users.noreply.github.com>
+Date:   Fri Sep 12 15:56:04 2025 +0500
+
+    Create 1.py
+
+zsh: suspended  git log
+asanalibolat@Asanalis-MacBook-Air work % git log --pretty+oneline
+fatal: unrecognized argument: --pretty+oneline
+asanalibolat@Asanalis-MacBook-Air work % git log --pretty=oneline
+54f288065427983cab02db696f7c8b55859c7291 (HEAD -> main) lol
+420807c84e222d07d99482c98675b833cabf74e5 lol
+efa4dfc67f4a08fdfe32feb94463a3c1ce31dffb Added h1 tag
+db7f88670aa262d27f93f6a75e69305d16302b12 commots to a and b
+d3358501a12e42c447f45392d981332b96ff48bf first commit
+8d4d6f44520cf36b399ce8b7929c54b8e6941c24 (origin/main) Create 1.py
+asanalibolat@Asanalis-MacBook-Air work % git log --oneline --max-count=2
+git log --oneline --since="5 minutes ago"
+git log --oneline --until="5 minutes ago"
+git log --oneline --author="Your Name"
+git log --oneline --all
+54f2880 (HEAD -> main) lol
+420807c lol
+54f2880 (HEAD -> main) lol
+420807c lol
+efa4dfc Added h1 tag
+db7f886 commots to a and b
+d335850 first commit
+8d4d6f4 (origin/main) Create 1.py
+54f2880 (HEAD -> main) lol
+420807c lol
+efa4dfc Added h1 tag
+db7f886 commots to a and b
+d335850 first commit
+8d4d6f4 (origin/main) Create 1.py
+asanalibolat@Asanalis-MacBook-Air work % git log --all --pretty=format:"%h %cd %s (%an)" --since="7 days ago"
+54f2880 Thu Sep 18 12:41:17 2025 +0500 lol (Asanalib)
+420807c Thu Sep 18 12:39:08 2025 +0500 lol (Asanalib)
+efa4dfc Thu Sep 18 12:31:55 2025 +0500 Added h1 tag (Asanalib)
+db7f886 Thu Sep 18 12:22:40 2025 +0500 commots to a and b (Асанали Болат)
+d335850 Fri Sep 12 16:23:36 2025 +0500 first commit (Асанали Болат)
+8d4d6f4 Fri Sep 12 15:56:04 2025 +0500 Create 1.py (Asanali Bolat)
+asanalibolat@Asanalis-MacBook-Air work % git log --pretty=format:"%h %ad | %s%d [%an]" --date=short
+54f2880 2025-09-18 | lol (HEAD -> main) [Asanalib]
+420807c 2025-09-18 | lol [Asanalib]
+efa4dfc 2025-09-18 | Added h1 tag [Asanalib]
+db7f886 2025-09-18 | commots to a and b [Асанали Болат]
+d335850 2025-09-12 | first commit [Асанали Болат]
+8d4d6f4 2025-09-12 | Create 1.py (origin/main) [Asanali Bolat]
+asanalibolat@Asanalis-MacBook-Air work % git config --global format.pretty '%h %ad | %s%d [%an]'
+
+asanalibolat@Asanalis-MacBook-Air work % git log
+54f2880 Thu Sep 18 12:41:17 2025 +0500 | lol (HEAD -> main) [Asanalib]
+420807c Thu Sep 18 12:39:08 2025 +0500 | lol [Asanalib]
+efa4dfc Thu Sep 18 12:31:55 2025 +0500 | Added h1 tag [Asanalib]
+db7f886 Thu Sep 18 12:22:40 2025 +0500 | commots to a and b [Асанали Болат]
+d335850 Fri Sep 12 16:21:45 2025 +0500 | first commit [Асанали Болат]
+8d4d6f4 Fri Sep 12 15:56:04 2025 +0500 | Create 1.py (origin/main) [Asanali Bolat]
+asanalibolat@Asanalis-MacBook-Air work % git config --global log.date short
+asanalibolat@Asanalis-MacBook-Air work % git log
+54f2880 2025-09-18 | lol (HEAD -> main) [Asanalib]
+420807c 2025-09-18 | lol [Asanalib]
+efa4dfc 2025-09-18 | Added h1 tag [Asanalib]
+db7f886 2025-09-18 | commots to a and b [Асанали Болат]
+d335850 2025-09-12 | first commit [Асанали Болат]
+8d4d6f4 2025-09-12 | Create 1.py (origin/main) [Asanali Bolat]
+asanalibolat@Asanalis-MacBook-Air work % db7f886
+zsh: command not found: db7f886
+asanalibolat@Asanalis-MacBook-Air work % git checkout <db7f886>
+zsh: parse error near `\n'
+asanalibolat@Asanalis-MacBook-Air work % git checkout db7f886
+warning: unable to rmdir 'work': Directory not empty
+Note: switching to 'db7f886'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at db7f886 commots to a and b
+asanalibolat@Asanalis-MacBook-Air work % cat hello.html
+<!doctype html>
+<html>
+  <head>
+    <title>This is the title of the webpage!</title>
+  </head>
+  <body>
+<h1>Hello, World!</h1>
+  </body>
+</html>
+asanalibolat@Asanalis-MacBook-Air work % git switch main
+M	work
+Previous HEAD position was db7f886 commots to a and b
+Switched to branch 'main'
+asanalibolat@Asanalis-MacBook-Air work % cat hello.html
+<!doctype html>
+<html>
+  <head>
+   </head>
+  <body>
+<h1>Hello</h1>
+  </body>
+</html>
+asanalibolat@Asanalis-MacBook-Air work % git tag v1
+asanalibolat@Asanalis-MacBook-Air work % git log
+54f2880 2025-09-18 | lol (HEAD -> main, tag: v1) [Asanalib]
+420807c 2025-09-18 | lol [Asanalib]
+efa4dfc 2025-09-18 | Added h1 tag [Asanalib]
+db7f886 2025-09-18 | commots to a and b [Асанали Болат]
+d335850 2025-09-12 | first commit [Асанали Болат]
+8d4d6f4 2025-09-12 | Create 1.py (origin/main) [Asanali Bolat]
+asanalibolat@Asanalis-MacBook-Air work % git checkout v1^
+warning: unable to rmdir 'work': Directory not empty
+Note: switching to 'v1^'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 420807c lol
+asanalibolat@Asanalis-MacBook-Air work % cat hello.html
+<!doctype html>
+<html>
+  <head>
+    <title>This is the title of the webpage!</title>
+  </head>
+  <body>
+<h1>Hello</h1>
+  </body>
+</html>
+asanalibolat@Asanalis-MacBook-Air work % git tag v1-beta
+asanalibolat@Asanalis-MacBook-Air work % git log
+420807c 2025-09-18 | lol (HEAD, tag: v1-beta) [Asanalib]
+efa4dfc 2025-09-18 | Added h1 tag [Asanalib]
+db7f886 2025-09-18 | commots to a and b [Асанали Болат]
+d335850 2025-09-12 | first commit [Асанали Болат]
+8d4d6f4 2025-09-12 | Create 1.py (origin/main) [Asanali Bolat]
+asanalibolat@Asanalis-MacBook-Air work % git checkout v1
+M	work
+Previous HEAD position was 420807c lol
+HEAD is now at 54f2880 lol
+asanalibolat@Asanalis-MacBook-Air work % git checkout v1-beta
+warning: unable to rmdir 'work': Directory not empty
+Previous HEAD position was 54f2880 lol
+HEAD is now at 420807c lol
+asanalibolat@Asanalis-MacBook-Air work % git tag
+v1
+v1-beta
+asanalibolat@Asanalis-MacBook-Air work % git log main --all
+54f2880 2025-09-18 | lol (tag: v1, main) [Asanalib]
+420807c 2025-09-18 | lol (HEAD, tag: v1-beta) [Asanalib]
+efa4dfc 2025-09-18 | Added h1 tag [Asanalib]
+db7f886 2025-09-18 | commots to a and b [Асанали Болат]
+d335850 2025-09-12 | first commit [Асанали Болат]
+8d4d6f4 2025-09-12 | Create 1.py (origin/main) [Asanali Bolat]
+asanalibolat@Asanalis-MacBook-Air work % git switch main
+M	work
+Previous HEAD position was 420807c lol
+Switched to branch 'main'
+asanalibolat@Asanalis-MacBook-Air work % git status
+warning: could not open directory '.Trash/': Operation not permitted
+warning: could not open directory 'Documents/': Operation not permitted
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   ../../../../work (untracked content)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../../../../.CFUserTextEncoding
+	../../../../.DS_Store
+	../../../../.cups/
+	../../../../.dbclient/
+	../../../../.gitconfig
+	../../../../.gitconfig.swp
+	../../../../.idlerc/
+	../../../../.lesshst
+	../../../../.local/
+	../../../../.swiftpm/
+	../../../../.viminfo
+	../../../../.vscode/
+	../../../../.zprofile
+	../../../../.zprofile.pysave
+	../../../../.zsh_history
+	../../../../.zsh_sessions/
+	../../../../Applications/
+	../../../../DataGripProjects/
+	../../../.DS_Store
+	../../../.localized
+	../../../472633114_18483765187056474_6860639151999544586_n.jpg
+	../../../Amethyst/
+	../../../Garnet/
+	../../../Git_Cheat_Sheet.pdf
+	../../../Lecture 2. Descriptive Statistics.pdf
+	../../../Lecture 3. Descriptive Statistics (cont.).pdf
+	../../../Seminar 2. Descriptive Statistics.pdf
+	../../../Seminar 3. Descriptive Statistics (cont.).pdf
+	../../../VS/
+	../../../and Pearl/
+	../../../and Steven!/
+	../../.DS_Store
+	../../files/
+	../.DS_Store
+	../../../../Downloads/
+	../../../../Library/
+	../../../../Movies/
+	../../../../Music/
+	../../../../Pictures/
+	../../../../Public/
+	../../../../lol/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+asanalibolat@Asanalis-MacBook-Air work % git status       
+warning: could not open directory '.Trash/': Operation not permitted
+warning: could not open directory 'Documents/': Operation not permitted
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   hello.html
+	modified:   ../../../../work (untracked content)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../../../../.CFUserTextEncoding
+	../../../../.DS_Store
+	../../../../.cups/
+	../../../../.dbclient/
+	../../../../.gitconfig
+	../../../../.gitconfig.swp
+	../../../../.idlerc/
+	../../../../.lesshst
+	../../../../.local/
+	../../../../.swiftpm/
+	../../../../.viminfo
+	../../../../.vscode/
+	../../../../.zprofile
+	../../../../.zprofile.pysave
+	../../../../.zsh_history
+	../../../../.zsh_sessions/
+	../../../../Applications/
+	../../../../DataGripProjects/
+	../../../.DS_Store
+	../../../.localized
+	../../../472633114_18483765187056474_6860639151999544586_n.jpg
+	../../../Amethyst/
+	../../../Garnet/
+	../../../Git_Cheat_Sheet.pdf
+	../../../Lecture 2. Descriptive Statistics.pdf
+	../../../Lecture 3. Descriptive Statistics (cont.).pdf
+	../../../Seminar 2. Descriptive Statistics.pdf
+	../../../Seminar 3. Descriptive Statistics (cont.).pdf
+	../../../VS/
+	../../../and Pearl/
+	../../../and Steven!/
+	../../.DS_Store
+	../../files/
+	../.DS_Store
+	../../../../Downloads/
+	../../../../Library/
+	../../../../Movies/
+	../../../../Music/
+	../../../../Pictures/
+	../../../../Public/
+	../../../../lol/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+asanalibolat@Asanalis-MacBook-Air work % git restore hello.html
+asanalibolat@Asanalis-MacBook-Air work % git status
+warning: could not open directory '.Trash/': Operation not permitted
+warning: could not open directory 'Documents/': Operation not permitted
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   ../../../../work (untracked content)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../../../../.CFUserTextEncoding
+	../../../../.DS_Store
+	../../../../.cups/
+	../../../../.dbclient/
+	../../../../.gitconfig
+	../../../../.gitconfig.swp
+	../../../../.idlerc/
+	../../../../.lesshst
+	../../../../.local/
+	../../../../.swiftpm/
+	../../../../.viminfo
+	../../../../.vscode/
+	../../../../.zprofile
+	../../../../.zprofile.pysave
+	../../../../.zsh_history
+	../../../../.zsh_sessions/
+	../../../../Applications/
+	../../../../DataGripProjects/
+	../../../.DS_Store
+	../../../.localized
+	../../../472633114_18483765187056474_6860639151999544586_n.jpg
+	../../../Amethyst/
+	../../../Garnet/
+	../../../Git_Cheat_Sheet.pdf
+	../../../Lecture 2. Descriptive Statistics.pdf
+	../../../Lecture 3. Descriptive Statistics (cont.).pdf
+	../../../Seminar 2. Descriptive Statistics.pdf
+	../../../Seminar 3. Descriptive Statistics (cont.).pdf
+	../../../VS/
+	../../../and Pearl/
+	../../../and Steven!/
+	../../.DS_Store
+	../../files/
+	../.DS_Store
+	../../../../Downloads/
+	../../../../Library/
+	../../../../Movies/
+	../../../../Music/
+	../../../../Pictures/
+	../../../../Public/
+	../../../../lol/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+asanalibolat@Asanalis-MacBook-Air work % cat hello.html
+<!doctype html>
+<html>
+  <head>
+   </head>
+  <body>
+<h1>Hello</h1>
+  </body>
+</html>
+asanalibolat@Asanalis-MacBook-Air work % git add hello.html
+asanalibolat@Asanalis-MacBook-Air work % git status
+warning: could not open directory '.Trash/': Operation not permitted
+warning: could not open directory 'Documents/': Operation not permitted
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   ../../../../work (untracked content)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../../../../.CFUserTextEncoding
+	../../../../.DS_Store
+	../../../../.cups/
+	../../../../.dbclient/
+	../../../../.gitconfig
+	../../../../.gitconfig.swp
+	../../../../.idlerc/
+	../../../../.lesshst
+	../../../../.local/
+	../../../../.swiftpm/
+	../../../../.viminfo
+	../../../../.vscode/
+	../../../../.zprofile
+	../../../../.zprofile.pysave
+	../../../../.zsh_history
+	../../../../.zsh_sessions/
+	../../../../Applications/
+	../../../../DataGripProjects/
+	../../../.DS_Store
+	../../../.localized
+	../../../472633114_18483765187056474_6860639151999544586_n.jpg
+	../../../Amethyst/
+	../../../Garnet/
+	../../../Git_Cheat_Sheet.pdf
+	../../../Lecture 2. Descriptive Statistics.pdf
+	../../../Lecture 3. Descriptive Statistics (cont.).pdf
+	../../../Seminar 2. Descriptive Statistics.pdf
+	../../../Seminar 3. Descriptive Statistics (cont.).pdf
+	../../../VS/
+	../../../and Pearl/
+	../../../and Steven!/
+	../../.DS_Store
+	../../files/
+	../.DS_Store
+	../../../../Downloads/
+	../../../../Library/
+	../../../../Movies/
+	../../../../Music/
+	../../../../Pictures/
+	../../../../Public/
+	../../../../lol/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+asanalibolat@Asanalis-MacBook-Air work % git add hello.html
+asanalibolat@Asanalis-MacBook-Air work % git status
+warning: could not open directory '.Trash/': Operation not permitted
+warning: could not open directory 'Documents/': Operation not permitted
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   hello.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   ../../../../work (untracked content)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../../../../.CFUserTextEncoding
+	../../../../.DS_Store
+	../../../../.cups/
+	../../../../.dbclient/
+	../../../../.gitconfig
+	../../../../.gitconfig.swp
+	../../../../.idlerc/
+	../../../../.lesshst
+	../../../../.local/
+	../../../../.swiftpm/
+	../../../../.viminfo
+	../../../../.vscode/
+	../../../../.zprofile
+	../../../../.zprofile.pysave
+	../../../../.zsh_history
+	../../../../.zsh_sessions/
+	../../../../Applications/
+	../../../../DataGripProjects/
+	../../../.DS_Store
+	../../../.localized
+	../../../472633114_18483765187056474_6860639151999544586_n.jpg
+	../../../Amethyst/
+	../../../Garnet/
+	../../../Git_Cheat_Sheet.pdf
+	../../../Lecture 2. Descriptive Statistics.pdf
+	../../../Lecture 3. Descriptive Statistics (cont.).pdf
+	../../../Seminar 2. Descriptive Statistics.pdf
+	../../../Seminar 3. Descriptive Statistics (cont.).pdf
+	../../../VS/
+	../../../and Pearl/
+	../../../and Steven!/
+	../../.DS_Store
+	../../files/
+	../.DS_Store
+	../../../../Downloads/
+	../../../../Library/
+	../../../../Movies/
+	../../../../Music/
+	../../../../Pictures/
+	../../../../Public/
+	../../../../lol/
+
+asanalibolat@Asanalis-MacBook-Air work % git restore --staged hello.html
+asanalibolat@Asanalis-MacBook-Air work % git restore hello.html
+asanalibolat@Asanalis-MacBook-Air work % git status
+warning: could not open directory '.Trash/': Operation not permitted
+warning: could not open directory 'Documents/': Operation not permitted
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   ../../../../work (untracked content)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../../../../.CFUserTextEncoding
+	../../../../.DS_Store
+	../../../../.cups/
+	../../../../.dbclient/
+	../../../../.gitconfig
+	../../../../.gitconfig.swp
+	../../../../.idlerc/
+	../../../../.lesshst
+	../../../../.local/
+	../../../../.swiftpm/
+	../../../../.viminfo
+	../../../../.vscode/
+	../../../../.zprofile
+	../../../../.zprofile.pysave
+	../../../../.zsh_history
+	../../../../.zsh_sessions/
+	../../../../Applications/
+	../../../../DataGripProjects/
+	../../../.DS_Store
+	../../../.localized
+	../../../472633114_18483765187056474_6860639151999544586_n.jpg
+	../../../Amethyst/
+	../../../Garnet/
+	../../../Git_Cheat_Sheet.pdf
+	../../../Lecture 2. Descriptive Statistics.pdf
+	../../../Lecture 3. Descriptive Statistics (cont.).pdf
+	../../../Seminar 2. Descriptive Statistics.pdf
+	../../../Seminar 3. Descriptive Statistics (cont.).pdf
+	../../../VS/
+	../../../and Pearl/
+	../../../and Steven!/
+	../../.DS_Store
+	../../files/
+	../.DS_Store
+	../../../../Downloads/
+	../../../../Library/
+	../../../../Movies/
+	../../../../Music/
+	../../../../Pictures/
+	../../../../Public/
+	../../../../lol/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+asanalibolat@Asanalis-MacBook-Air work % 
